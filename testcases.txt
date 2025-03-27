@@ -1,0 +1,213 @@
+1. **Test Case Title**: Login with Valid Credentials
+
+   - **Preconditions**: Access to the internet and a browser. User account credentials.
+
+   - **Steps to Execute**:
+     1. Open the browser and go to 'https://www.saucedemo.com/v1/'.
+     2. Enter the username 'standard_user'.
+     3. Enter the password 'secret_sauce'.
+     
+     4. Click on the 'Login' button.
+
+   - **Expected Results**: User should be logged into the inventory page.
+
+     2. **Test Case Title**: View Product Details
+
+   - **Preconditions**: User must be logged in.
+
+   - **Steps to Execute**:
+     
+     1. Click on a product title in the inventory.
+
+   - **Expected Results**: User should be navigated to the product details page.
+
+     3. **Test Case Title**: Add Product to Cart
+
+   - **Preconditions**: User must be logged in and viewing a product detail page.
+
+   - **Steps to Execute**:
+     
+     1. Click on the 'Add to Cart' button on a product detail page.
+
+   - **Expected Results**: Product should be added to the shopping cart.
+
+     4. **Test Case Title**: Remove Product from Cart
+
+   - **Preconditions**: User must be logged in and have at least one product in the cart.
+
+   - **Steps to Execute**:
+     
+     1. Go to the cart and click on the 'Remove' button next to a product.
+
+   - **Expected Results**: The product should be removed from the cart.
+
+     5. **Test Case Title**: Sort Products
+
+   - **Preconditions**: User must be logged in.
+
+   - **Steps to Execute**:
+     1. Click the sorting dropdown.
+     
+     2. Select a sorting option such as 'Price (low to high)'.
+
+   - **Expected Results**: Product listing should be sorted by the chosen criteria.
+
+     6. **Test Case Title**: Proceed to Checkout
+
+   - **Preconditions**: User must be logged in and have at least one product in the cart.
+
+   - **Steps to Execute**:
+     1. Click on the cart icon.
+     
+     2. Click on 'Checkout'.
+
+   - **Expected Results**: User should be navigated to the checkout information page.
+
+     7. **Test Case Title**: Enter Checkout Information
+
+   - **Preconditions**: User is on the checkout page.
+
+   - **Steps to Execute**:
+     1. Enter first name, last name, and postal code.
+     
+     2. Click on 'Continue'.
+
+   - **Expected Results**: User should access the checkout overview page.
+
+     8. **Test Case Title**: Complete Purchase
+
+   - **Preconditions**: User is on the checkout overview page.
+
+   - **Steps to Execute**:
+     
+     1. Click on the 'Finish' button.
+
+   - **Expected Results**: Purchase should be completed, and user should see confirmation page.
+
+     9. **Test Case Title**: Logout
+
+   - **Preconditions**: User is logged in.
+
+   - **Steps to Execute**:
+     1. Click on the menu button.
+     
+     2. Click on 'Logout'.
+
+   - **Expected Results**: User should be logged out and returned to the login page.
+
+     10. **Test Case Title**: Reset App State
+
+    - **Preconditions**: User is logged in with a modified app state (cart not empty).
+
+    - **Steps to Execute**:
+      
+     1. Click on 'Reset App State'.
+
+    - **Expected Results**: The app should return to its default state (cart should be empty).", error=None, include_in_memory=False)], all_model_outputs=[{'go_to_url': {'url': 'https://www.saucedemo.com/v1/'}, 'interacted_element': None}, {'input_text': {'index': 0, 'text': 'standard_user'}, 'interacted_element': None}, {'input_text': {'index': 1, 'text': 'secret_sauce'}, 'interacted_element': DOMHistoryElement(tag_name='input', xpath='html/body/div[2]/div/div/div/form/input[2]', highlight_index=1, entire_parent_branch_path=['div', 'div', 'div', 'div', 'form', 'input'], attributes={'type': 'password', 'class': 'form_input', 'data-test': 'password', 'id': 'password', 'name': 'password', 'placeholder': 'Password', 'autocorrect': 'off', 'autocapitalize': 'none', 'value': ''}, shadow_root=False, css_selector='html > body > div:nth-of-type(2) > div > div > div > form > input:nth-of-type(2).form_input[type="password"][id="password"][name="password"][placeholder="Password"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 2}, 'interacted_element': DOMHistoryElement(tag_name='input', xpath='html/body/div[2]/div/div/div/form/input[3]', highlight_index=2, entire_parent_branch_path=['div', 'div', 'div', 'div', 'form', 'input'], attributes={'type': 'submit', 'class': 'btn_action', 'id': 'login-button', 'value': 'LOGIN'}, shadow_root=False, css_selector='html > body > div:nth-of-type(2) > div > div > div > form > input:nth-of-type(3).btn_action[type="submit"][id="login-button"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 9}, 'interacted_element': DOMHistoryElement(tag_name='a', xpath='html/body/div/div[2]/div[2]/div/div[2]/div/div/div[2]/a', highlight_index=9, entire_parent_branch_path=['div', 'div', 'div', 'div', 'div', 'div', 'div', 'div', 'a'], attributes={'href': './inventory-item.html?id=4', 'id': 'item_4_title_link'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > a[href="./inventory-item.html?id=4"][id="item_4_title_link"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 10}, 'interacted_element': DOMHistoryElement(tag_name='button', xpath='html/body/div/div[2]/div[2]/div/div/div/button', highlight_index=10, entire_parent_branch_path=['div', 'div', 'div', 'div', 'div', 'div', 'button'], attributes={'class': 'btn_primary btn_inventory'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div > button.btn_primary.btn_inventory', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 8}, 'interacted_element': DOMHistoryElement(tag_name='button', xpath='html/body/div/div[2]/div[2]/div/button', highlight_index=8, entire_parent_branch_path=['div', 'div', 'div', 'div', 'button'], attributes={'class': 'inventory_details_back_button'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(2) > div > button.inventory_details_back_button', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'select_dropdown_option': {'index': 7, 'text': 'Price (high to low)'}, 'interacted_element': DOMHistoryElement(tag_name='select', xpath='html/body/div/div[2]/div[2]/div/div/div[3]/select', highlight_index=7, entire_parent_branch_path=['div', 'div', 'div', 'div', 'div', 'div', 'select'], attributes={'class': 'product_sort_container'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div:nth-of-type(3) > select.product_sort_container', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 6}, 'interacted_element': DOMHistoryElement(tag_name='a', xpath='html/body/div/div[2]/div/div[2]/a', highlight_index=6, entire_parent_branch_path=['div', 'div', 'div', 'div', 'a'], attributes={'href': './cart.html', 'class': 'shopping_cart_link fa-layers fa-fw'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div > div:nth-of-type(2) > a.shopping_cart_link.fa-layers.fa-fw[href="./cart.html"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 11}, 'interacted_element': DOMHistoryElement(tag_name='a', xpath='html/body/div/div[2]/div[3]/div/div[2]/a[2]', highlight_index=11, entire_parent_branch_path=['div', 'div', 'div', 'div', 'div', 'a'], attributes={'class': 'btn_action checkout_button', 'href': './checkout-step-one.html'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(3) > div > div:nth-of-type(2) > a:nth-of-type(2).btn_action.checkout_button[href="./checkout-step-one.html"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'input_text': {'index': 8, 'text': 'John'}, 'interacted_element': DOMHistoryElement(tag_name='input', xpath='html/body/div/div[2]/div[3]/div/form/div/input', highlight_index=8, entire_parent_branch_path=['div', 'div', 'div', 'div', 'form', 'div', 'input'], attributes={'id': 'first-name', 'type': 'text', 'class': 'form_input', 'data-test': 'firstName', 'placeholder': 'First Name', 'autocorrect': 'off', 'autocapitalize': 'none', 'value': ''}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(3) > div > form > div > input.form_input[id="first-name"][type="text"][placeholder="First Name"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'input_text': {'index': 9, 'text': 'Doe'}, 'interacted_element': DOMHistoryElement(tag_name='input', xpath='html/body/div/div[2]/div[3]/div/form/div/input[2]', highlight_index=9, entire_parent_branch_path=['div', 'div', 'div', 'div', 'form', 'div', 'input'], attributes={'id': 'last-name', 'type': 'text', 'class': 'form_input', 'data-test': 'lastName', 'placeholder': 'Last Name', 'autocorrect': 'off', 'autocapitalize': 'none', 'value': ''}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(3) > div > form > div > input:nth-of-type(2).form_input[id="last-name"][type="text"][placeholder="Last Name"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'input_text': {'index': 10, 'text': '12345'}, 'interacted_element': DOMHistoryElement(tag_name='input', xpath='html/body/div/div[2]/div[3]/div/form/div/input[3]', highlight_index=10, entire_parent_branch_path=['div', 'div', 'div', 'div', 'form', 'div', 'input'], attributes={'id': 'postal-code', 'type': 'text', 'class': 'form_input', 'data-test': 'postalCode', 'placeholder': 'Zip/Postal Code', 'autocorrect': 'off', 'autocapitalize': 'none', 'value': ''}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(3) > div > form > div > input:nth-of-type(3).form_input[id="postal-code"][type="text"][placeholder="Zip/Postal Code"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 12}, 'interacted_element': DOMHistoryElement(tag_name='input', xpath='html/body/div/div[2]/div[3]/div/form/div[2]/input', highlight_index=12, entire_parent_branch_path=['div', 'div', 'div', 'div', 'form', 'div', 'input'], attributes={'class': 'btn_primary cart_button', 'type': 'submit', 'value': 'CONTINUE'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(3) > div > form > div:nth-of-type(2) > input.btn_primary.cart_button[type="submit"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'click_element': {'index': 9}, 'interacted_element': DOMHistoryElement(tag_name='a', xpath='html/body/div/div[2]/div[3]/div/div[2]/div[8]/a[2]', highlight_index=9, entire_parent_branch_path=['div', 'div', 'div', 'div', 'div', 'div', 'a'], attributes={'class': 'btn_action cart_button', 'href': './checkout-complete.html'}, shadow_root=False, css_selector='html > body > div > div:nth-of-type(2) > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(8) > a:nth-of-type(2).btn_action.cart_button[href="./checkout-complete.html"]', page_coordinates=None, viewport_coordinates=None, viewport_info=None)}, {'done': {'text': "
+
+     1. **Test Case Title**: Login with Valid Credentials
+
+   - **Preconditions**: Access to the internet and a browser. User account credentials.
+
+   - **Steps to Execute**:
+     1. Open the browser and go to 'https://www.saucedemo.com/v1/'.
+     2. Enter the username 'standard_user'.
+     3. Enter the password 'secret_sauce'.
+     
+     4. Click on the 'Login' button.
+
+   - **Expected Results**: User should be logged into the inventory page.
+
+     2. **Test Case Title**: View Product Details
+
+   - **Preconditions**: User must be logged in.
+
+   - **Steps to Execute**:
+     
+     1. Click on a product title in the inventory.
+
+   - **Expected Results**: User should be navigated to the product details page.
+
+     3. **Test Case Title**: Add Product to Cart
+
+   - **Preconditions**: User must be logged in and viewing a product detail page.
+
+   - **Steps to Execute**:
+     
+     1. Click on the 'Add to Cart' button on a product detail page.
+
+   - **Expected Results**: Product should be added to the shopping cart.
+
+     4. **Test Case Title**: Remove Product from Cart
+
+   - **Preconditions**: User must be logged in and have at least one product in the cart.
+
+   - **Steps to Execute**:
+     
+     1. Go to the cart and click on the 'Remove' button next to a product.
+
+   - **Expected Results**: The product should be removed from the cart.
+
+     5. **Test Case Title**: Sort Products
+
+   - **Preconditions**: User must be logged in.
+
+   - **Steps to Execute**:
+     1. Click the sorting dropdown.
+     
+     2. Select a sorting option such as 'Price (low to high)'.
+
+   - **Expected Results**: Product listing should be sorted by the chosen criteria.
+
+     6. **Test Case Title**: Proceed to Checkout
+
+   - **Preconditions**: User must be logged in and have at least one product in the cart.
+
+   - **Steps to Execute**:
+     1. Click on the cart icon.
+     
+     2. Click on 'Checkout'.
+
+   - **Expected Results**: User should be navigated to the checkout information page.
+
+     7. **Test Case Title**: Enter Checkout Information
+
+   - **Preconditions**: User is on the checkout page.
+
+   - **Steps to Execute**:
+     1. Enter first name, last name, and postal code.
+     
+     2. Click on 'Continue'.
+
+   - **Expected Results**: User should access the checkout overview page.
+
+     8. **Test Case Title**: Complete Purchase
+
+   - **Preconditions**: User is on the checkout overview page.
+
+   - **Steps to Execute**:
+     
+     1. Click on the 'Finish' button.
+
+   - **Expected Results**: Purchase should be completed, and user should see confirmation page.
+
+     9. **Test Case Title**: Logout
+
+   - **Preconditions**: User is logged in.
+
+   - **Steps to Execute**:
+     1. Click on the menu button.
+     
+     2. Click on 'Logout'.
+
+   - **Expected Results**: User should be logged out and returned to the login page.
+
+     10. **Test Case Title**: Reset App State
+
+    - **Preconditions**: User is logged in with a modified app state (cart not empty).
+
+    - **Steps to Execute**:
+      
+     1. Click on 'Reset App State'.
+
+    - **Expected Results**: The app should return to its default state (cart should be empty).", 'success': True}, 'interacted_element': None}])
